@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.vercel
+data/mock-dataset.json
+dist/
+
+# The source workbooks ARE included so `npm run import` works with no arguments.
+# The generated mock fixture is not — see src/lib/mock/mock-monday.ts.

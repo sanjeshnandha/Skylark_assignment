@@ -1,0 +1,33 @@
+{
+  "name": "skylark-bi-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monday.com Business Intelligence Agent \u2014 Skylark Drones assignment",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "import": "node scripts/import-to-monday.ts",
+    "import:dry": "node scripts/import-to-monday.ts --dry-run",
+    "mock:build": "node scripts/build-mock-dataset.ts",
+    "mcp:stdio": "node mcp/stdio.ts",
+    "test": "node --test tests/*.test.ts",
+    "smoke": "node scripts/smoke-test.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "exceljs": "^4.4.0",
+    "typescript": "^5.7.2"
+  },
+  "type": "module"
+}
